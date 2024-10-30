@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DunkXperience</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="banner">
+            <div class="container">
+                <h1>DunkXperience</h1>
+                <h2>"Feel the dunk, live the game."</h2>
+                <img class="avatar" src="images/avatar.png" alt="Shoes&A's Logo">
+                <a class="button" href="#work-section">Discover our work</a>
+            </div>
+        </div>
+        <div class="container" id="work-section"> 
+            
+            <h2>Our top products :</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="images/lakersmaillot.png" alt="Basketball Shoes">
+                    <h3>Los Angeles Lakers </h3>
+                </div>
+                <div class="card">
+                    <img src="images/bulls.png" alt="Antique Boots">
+                    <h3>Chicago Bulls</h3>
+                </div>
+                <div class="card">
+                    <img src="images/goldenstate.png" alt="Babouches">
+                    <h3>Golden State Warriors</h3>
+                </div>
+                <div class="card">
+                    <img src="images/boston.png" alt="Kerokerokeroppi Boots">
+                    <h3>Boston Celtics </h3>
+                </div>
+                <div class="card" id="gold">
+                    <img src="images/RealMadridBaloncesto.png" alt="Gold-armor Shoes">
+                    <h3>Real Madrid Baloncesto </h3>
+                </div>
+
+            </div>
+        </div>
+        <script>
+            window.onload = function() {
+                // Remove the hash from the URL
+                if (window.location.hash) {
+                    history.replaceState(null, null, window.location.pathname);
+                }
+            };
+        </script>
+        
+    </body>
+</html>

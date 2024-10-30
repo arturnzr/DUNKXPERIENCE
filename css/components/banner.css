@@ -1,0 +1,89 @@
+.banner {
+  position: relative;
+  margin: 40px 100px;
+  overflow: hidden; /* Ensure no overflow from the pseudo-element */
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../../images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+  z-index: 0; /* Send it to the back */
+}
+
+.banner .container {
+  position: relative; /* Position relative for the content */
+  z-index: 1; /* Bring content above the pseudo-element */
+  color: white; /* Change text color for visibility */
+  text-align: center; /* Center-align text */
+  padding: 50px; /* Unified padding */
+}
+
+.banner h1 {
+  color: black;
+  font-size: 50px;
+  margin: 0; /* Remove default margin */
+}
+
+.banner h2 {
+  color: black;
+  font-size: 30px;
+  font-weight: lighter;
+  opacity: 0.8;
+  margin: 10px 0; /* Add margin for spacing */
+}
+
+.banner .avatar {
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  display: block; /* Center the image */
+}
+
+.banner .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1; /* Ensure button is above the background */
+}
+
+.banner .button:hover {
+  background-color: #444;
+}
+
+/* Responsive Design */
+.container {
+  max-width: 900px; /* Use max-width for better responsiveness */
+  width: 100%; /* Allow full width within the max-width */
+}
+
+@media (max-width: 960px) {
+  .container {
+      max-width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+      max-width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+      max-width: 300px;
+  }
+}

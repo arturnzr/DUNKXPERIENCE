@@ -1,0 +1,21 @@
+.button {
+    background-color: #00d672;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    width: 120px; /* Initial width */
+    height: 40px; /* Add padding for height */
+    padding: 50px 50px;
+    margin: 20px auto;
+    font-family: 'Roboto', 'sans-serif';
+    transition: background-color 0.3s ease, width 0.3s ease; /* Transition properties */
+    display: inline-flex; /* Use inline-flex for horizontal alignment */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    text-align: center; /* Center text */
+}
+
+.button:hover {
+    background-color: #01e97c;
+    width: 140px; /* Increased width on hover */
+    height: 50px;
+}
